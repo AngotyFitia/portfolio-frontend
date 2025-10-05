@@ -13,7 +13,7 @@ function App() {
   const [message, setMessage] = useState<string>("");
 
   useEffect(() => {
-    fetch("https://portfolio-backend-5cpq.onrender.com/api") // ou URL de Render après déploiement
+    fetch("https://portfolio-backend-5cpq.onrender.com/api")
       .then(res => res.json())
       .then((data: ApiResponse) => setMessage(data.message))
       .catch(err => console.error(err));
