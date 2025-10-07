@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+const apiUrl = import.meta.env.VITE_API_URL;
 
 type ApiResponse = {
   message: string;
@@ -13,14 +14,15 @@ function App() {
   const [message, setMessage] = useState<string>("");
 
   useEffect(() => {
-    fetch("https://portfolio-backend-5cpq.onrender.com/api")
+    fetch(`${apiUrl}/test-db`)
       .then(res => res.json())
       .then((data: ApiResponse) => setMessage(data.message))
       .catch(err => console.error(err));
   }, []);
+  
 
   const sendData = () => {
-    fetch("https://portfolio-backend-5cpq.onrender.com/api/data", {
+    fetch(`${apiUrl}/api/data`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name: "Angoty" })
