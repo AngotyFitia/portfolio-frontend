@@ -35,5 +35,6 @@ dist-ssr
 
 # Env files (si tu as des clés)
 # .env
+.install
 .env.local
 .env.*.local
