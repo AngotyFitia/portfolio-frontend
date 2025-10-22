@@ -1,80 +1,41 @@
-// export default function Hero() {
-//   return (
-//     <section className="bg-[#f5f5dc] py-20 text-center">
-//       <img
-//         src="/images/image2.jpg" width="150px"
-//         alt="Portfolio banner"
-//         className="mx-auto mb-6 w-48 h-48 object-cover rounded-full shadow-lg"
-//       />
-//       <h1 className="text-4xl font-bold mb-4">Welcome to my portfolio</h1>
-//       <p className="text-lg">
-//         Explore my projects, skills, and experiences.
-//       </p>
-//       <button className="mt-6 bg-[#8B4512] hover:bg-brown text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-100">
-//         View my projects
-//       </button>
-//     </section>
-//   )
-// }
-
-
-// export default function Hero() {
-//   return (
-//     <section className="bg-[#f5f5dc] py-20 px-4">
-//       <div className="container mx-auto flex flex-col md:flex-row items-center gap-12">
-//         {/* Image à gauche */}
-//         <div className="flex-shrink-0">
-//           <img src="/images/image2.jpg" alt="Portfolio banner" className="w-48 h-48 object-cover rounded-full shadow-lg md:w-64 md:h-64"/>
-//           <h1 className="text-4xl font-bold mb-4">Welcome to my portfolio</h1>
-//           <p className="text-lg mb-6">
-//             Explore my projects, skills, and experiences.
-//           </p>
-//           <button className="bg-[#8B4512] text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 hover:text-[#8B4512] transition-colors">
-//             View my projects
-//           </button>
-//         </div>
-
-//         {/* Texte à droite */}
-//         <div className="text-center md:text-left max-w-xl">
-//           <h1 className="text-4xl font-bold mb-4">Hi, I'm Angoty</h1>
-//           <p className="text-lg mb-6">Passionate about technology, I'm working with a variety of tech stacks.</p>
-//           <button className="bg-[#8B4512] text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 hover:text-[#8B4512] transition-colors">
-//             Contact me
-//           </button>
-//         </div>
-//       </div>
-//     </section>
-//   )
-// }
-
-
 export default function Hero() {
   return (
-    <section className="bg-[#f5f5dc] py-20 px-4">
-      <div className="container mx-auto flex flex-col md:flex-row items-center md:items-start gap-12 text-center md:text-left">
+    <section className="bg-[#f5f5dc] mt-20 py-20 px-2 md:px-4 text-[#2e2e2e]">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
         
-        {/* Image à gauche */}
-        <div className="flex-shrink-0">
-          <img
-            src="/images/image2.jpg"
-            alt="Portfolio banner"
-            className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full shadow-lg mx-auto md:mx-0"
-          />
-        </div>
-
-        {/* Texte à droite */}
-        <div className="max-w-xl">
-          <h1 className="text-4xl font-bold mb-4">Hi, I'm Angoty</h1>
-          <p className="text-lg mb-6">
-            Passionate about technology, I'm working with a variety of tech stacks.
-          </p>
-          <button className="bg-[#8B4512] text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 hover:text-[#8B4512] transition-colors">
-            Contact me
+        {/* Texte */}
+        <div className="md:w-1/2 text-center md:text-left">
+        {/* <h2 className="overflow-hidden whitespace-nowrap border-r-4 border-[#8B4513] text-4xl font-bold mb-6 animate-typing">
+          Bienvenue sur mon site web
+        </h2> */}
+          <h2 className="overflow-hidden border-r-4 border-[#8B4513] text-3xl md:text-4xl font-bold mb-6 animate-typing">
+            Bienvenue sur mon site web
+          </h2>
+          <div className="opacity-0 animate-fade-in-up text-lg leading-relaxed text-[#2e2e2e]">
+            <p className="mb-6">
+              Actuellement en Master 2 à l’Université Côte d’Azur, je suis passionnée par le développement logiciel et l’analyse de données. Curieuse, rigoureuse et toujours en quête de nouveaux défis, j’ai eu l’occasion de participer à plusieurs projets académiques et professionnels qui ont renforcé mon sens de l’organisation et du travail en équipe.
+            </p>
+            <p className="mb-8">
+              Je suis aujourd’hui à la recherche d’une nouvelle opportunité dans le domaine de l’informatique, où je pourrai contribuer activement à des projets concrets tout en développant mes compétences.
+            </p>
+          </div>
+          <button className="mt-8 bg-[#8B4513] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#5c3d12] transition-colors shadow-md">
+            Contactez-moi
           </button>
         </div>
-
+        
+        {/* Profil */}
+        <div className="md:w-1/2 text-center mt-10 md:mt-0">
+          <img
+            src="/images/image2.jpg"
+            alt="Photo de profil d'Angoty Fitia RABARIJAONA"
+            className="w-48 h-48 md:w-52 md:h-52 object-cover rounded-full shadow-xl ring-4 ring-[#8B4513] mx-auto mb-4"
+          />
+          <h3 className="text-2xl font-bold mb-2">Angoty Fitia RABARIJAONA</h3>
+          <p className="text-lg text-[#5c4b3b]">Développeuse Full-Stack | Étudiante</p>
+        </div>
+        
       </div>
     </section>
   );
 }
-
