@@ -1,9 +1,15 @@
-import Maintenance from "../components/Maintenance"
+// import Maintenance from "../components/Maintenance"
+import Description from "../components/Description"
+import Header from "../components/Header"
+import Projets from "../components/Projets"
 
 export default function Home() {
   return (
     <main>
-      <Maintenance />
+      <Header />
+      <Description />
+      <Projets />
+      {/* <Maintenance /> */}
     </main>
   )
 }
